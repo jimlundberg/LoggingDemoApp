@@ -28,15 +28,15 @@ namespace LoggingDemo.Pages
 
         public void OnPostStartButton(int sessionCount)
         {
-            ViewData["msg"] = $"Your Query for {sessionCount} is processed";
+            ViewData["msg"] = $"The Start Button {sessionCount} is processed";
         }
         public void OnPostStopButton(int sessionCount)
         {
-            ViewData["msg"] = $"Your Query for {sessionCount} is processed";
+            ViewData["msg"] = $"The Stop Button {sessionCount} is processed";
         }
         public void OnPostHistoryButton(int sessionCount)
         {
-            ViewData["msg"] = $"Your Query for {sessionCount} is processed";
+            ViewData["msg"] = $"The History Button {sessionCount} is processed";
         }
     }
 }

@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+
+    <div>
+        @ViewData["msg"]
+    </div>
+
+    <form method="post">
+        <div>Handler Menu</div>
+        <input type="submit" value="Start" asp-page-handler="StartButton" asp-route-sessioncount="30" />
+        <input type="submit" value="Stop" asp-page-handler="StopButton" asp-route-sessioncount="20" />
+        <input type="submit" value="History" asp-page-handler="HistoryButton" asp-route-sessioncount="10" />
+    </form>
